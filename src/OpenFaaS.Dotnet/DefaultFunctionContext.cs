@@ -6,6 +6,9 @@ using Microsoft.Extensions.Primitives;
 
 namespace OpenFaaS.Dotnet
 {
+    /// <summary>
+    /// Context for default function execution
+    /// </summary>
     public class DefaultFunctionContext : IFunctionContext
     {
         public HttpMethod HttpMethod

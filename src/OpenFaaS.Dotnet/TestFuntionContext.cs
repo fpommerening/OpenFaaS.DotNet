@@ -14,11 +14,11 @@ namespace OpenFaaS.Dotnet
 
         public Dictionary<string, StringValues> QueryParameters { get; } = new Dictionary<string, StringValues>();
 
-        public int ReadTimeout { get; set; } = 0;
+        public int ReadTimeout { get; set; } = -1;
 
-        public int WriteTimeout { get; set; } = 0;
-
-        public int ExecTimeout { get; } = 0; 
+        public int WriteTimeout { get; set; } = -1;
+    
+        public int ExecTimeout { get; } = -1; 
 
         public string[] HttpAccept { get; set; }
 
