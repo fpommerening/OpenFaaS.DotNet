@@ -83,5 +83,10 @@ namespace OpenFaaS.Dotnet
                 return Environment.GetEnvironmentVariable("Http_Content_Type");
             }
         }
+
+        public void WriteContent(string content)
+        {
+            Console.WriteLine(content);
+        }
     }
 }

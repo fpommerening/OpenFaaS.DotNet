@@ -44,5 +44,11 @@ namespace OpenFaaS.Dotnet
         /// Get the requested content type
         /// </summary>
         string ContentType { get; }
+
+        /// <summary>
+        /// Write the content as function result
+        /// </summary>
+        /// <param name="content"></param>
+        void WriteContent(string content);
     }
 }
