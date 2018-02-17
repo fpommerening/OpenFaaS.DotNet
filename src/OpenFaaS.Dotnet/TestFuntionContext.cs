@@ -33,7 +33,12 @@ namespace OpenFaaS.Dotnet
 
         public void WriteContent(string content)
         {
-            _stringBuilderContent.AppendLine(content);
+            _stringBuilderContent.Append(content);
+        }
+
+        public void WriteLineContent(string content)
+        {
+            _stringBuilderContent.Append(content);
         }
 
         public string Content => _stringBuilderContent.ToString();

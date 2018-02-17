@@ -50,5 +50,12 @@ namespace OpenFaaS.Dotnet
         /// </summary>
         /// <param name="content"></param>
         void WriteContent(string content);
+
+
+        /// <summary>
+        /// Write the content as line in function result
+        /// </summary>
+        /// <param name="content"></param>
+        void WriteLineContent(string content);
     }
 }

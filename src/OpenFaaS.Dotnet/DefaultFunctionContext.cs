@@ -89,6 +89,11 @@ namespace OpenFaaS.Dotnet
 
         public void WriteContent(string content)
         {
+            Console.Write(content);
+        }
+
+        public void WriteLineContent(string content)
+        {
             Console.WriteLine(content);
         }
     }
