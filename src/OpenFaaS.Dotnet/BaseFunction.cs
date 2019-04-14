@@ -9,6 +9,6 @@
 
         public IFunctionContext Context { get; }
 
-        public abstract void Handle(string input);
+        public abstract string Handle(string input);
     }
 }

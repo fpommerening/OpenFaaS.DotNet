@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
+﻿using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using Microsoft.Extensions.Primitives;
 
 namespace OpenFaaS.Dotnet
@@ -44,18 +41,5 @@ namespace OpenFaaS.Dotnet
         /// Get the requested content type
         /// </summary>
         string ContentType { get; }
-
-        /// <summary>
-        /// Write the content as function result
-        /// </summary>
-        /// <param name="content"></param>
-        void WriteContent(string content);
-
-
-        /// <summary>
-        /// Write the content as line in function result
-        /// </summary>
-        /// <param name="content"></param>
-        void WriteLineContent(string content);
     }
 }

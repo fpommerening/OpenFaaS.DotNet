@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using Microsoft.Extensions.Primitives;
 
 namespace OpenFaaS.Dotnet
@@ -23,24 +22,5 @@ namespace OpenFaaS.Dotnet
         public string[] HttpAccept { get; set; }
 
         public string ContentType { get; set; }
-
-        private readonly StringBuilder _stringBuilderContent = new StringBuilder();
-
-        public void ClearContent()
-        {
-            _stringBuilderContent.Clear();
-        }
-
-        public void WriteContent(string content)
-        {
-            _stringBuilderContent.Append(content);
-        }
-
-        public void WriteLineContent(string content)
-        {
-            _stringBuilderContent.Append(content);
-        }
-
-        public string Content => _stringBuilderContent.ToString();
     }
 }

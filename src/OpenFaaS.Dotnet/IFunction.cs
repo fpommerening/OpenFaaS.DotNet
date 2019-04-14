@@ -2,6 +2,6 @@
 {
     public interface IFunction
     {
-        void Handle(string input);
+        string Handle(string input);
     }
 }
